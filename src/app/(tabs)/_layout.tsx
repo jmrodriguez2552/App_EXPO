@@ -6,6 +6,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#ffd33d",
+        tabBarInactiveTintColor:"#b3b6b9",
         headerStyle: {
           backgroundColor: "#25292e",
         },
@@ -37,8 +38,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={
-                focused ? "information-circle" : "information-circle-outline"
-              }
+                focused ? "information-circle" : "information-circle-outline"}
               color={color}
               size={24}
             />
